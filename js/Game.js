@@ -184,3 +184,65 @@ handlePlayerControls() {
   }
 }
 }
+
+showLeaderboard() {
+  var leader1, leader2;
+ 
+
+var players = Object.values (allPlayers);
+
+if((players[0].rank === 0 && players[1].rank e) || players[0].rank --- 1) {
+
+leader1 =
+
+players[0].rank +
+
+"&emsp;" +
+
+players[0].name +
+
+"&emsp;" +
+
+players[0].score;
+
+leader2 -
+
+players[1].rank +
+"&emsp;" +
+players[1].name +
+
+"&emsp;" +
+
+players[1].score +
+}
+if (players[1].rank === 1) {
+ 
+
+leader1 =
+
+players[1].rank +
+
+"&emsp;" +
+
+players[1].name +
+
+"&emsp;" +
+
+players[1].score;
+
+leader2 =
+
+players[0].rank +
+
+"&emsp;"
+
+players[0].name +
+
+"&emsp;"
+
+players[0].scone;
+}
+  
+  this.leader1.html(leader1);
+  this.leader1.html(leader2);
+}
